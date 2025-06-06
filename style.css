@@ -50,10 +50,7 @@ body {
 }
 
 .process {
-    background-image: url(resources/background-png.png);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url(resources/background-png.png) no-repeat center top/100%;
 }
 
 .process__promo {
@@ -72,7 +69,7 @@ body {
 }
 
 .process__wrapper {
-    margin: 0 0 100px 80px;
+    margin: 0 0 100px 70px;
 }
 
 .process__benefit-card {
@@ -133,7 +130,7 @@ body {
     }
     .process__promo {
         padding-top: 80px;
-        max-width: 500px;
+        max-width: 350px;
         margin-bottom: 40px;
     }
     .process__benefits {
