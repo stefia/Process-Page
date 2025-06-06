@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    color: #374151;
+    background-color: #fff;
+}
+
+.text--h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.text--h2 {
+    font-size: 1.125rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.text--body-lr  {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.text--body {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.text--span {
+    font-weight: 600;
+}
+
+
+.text--violet {
+    color: #6B59D0;
+}
+
+.text--gray {
+    color: #6B7280;
+}
+
+.process {
+    background-image: url(resources/background-png.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.process__promo {
+    margin-bottom: 80px;
+    padding: 200px 0 0 20px;
+    max-width: 700px;
+}
+
+.process__promo-title {
+    margin-top: 20px;
+}
+
+.process__benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.process__wrapper {
+    margin: 0 0 100px 80px;
+}
+
+.process__benefit-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+    padding: 0 40px 0 20px;
+    margin-bottom: 70px;
+}
+
+.process__benefit-img {
+    width: 52px;
+    height: auto;
+}
+
+.process__benefit-title {
+    margin: 32px 0 20px;
+    position: relative;
+}
+
+.process__benefit-text {
+    max-width: 250px;
+}
+
+.process__benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    border-left: 2px dashed #DEDDEB;
+    z-index: 0;
+}
+
+.process__benefit-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 24px;
+    border-left: 2px solid #6B59D0;
+}
+@media (max-width: 1024px) {
+    .process__benefit-card {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 640px) {
+    .text--h1 {
+        font-size: 2rem; 
+    }
+    .process__wrapper {
+        margin-left: 30px;
+    }
+    .process__promo {
+        padding-top: 80px;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    .process__benefits {
+        flex-basis: 100%;
+    }
+    .process__benefit-card {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    .process__benefit-text {
+        max-width: 450px;
+    }
+}
