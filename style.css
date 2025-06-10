@@ -7,6 +7,7 @@
 body {
     min-height: 100vh;
     font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 1px;
     color: #374151;
     background-color: #fff;
 }
@@ -20,19 +21,16 @@ body {
 .text--h2 {
     font-size: 1.125rem;
     font-weight: 900;
-    letter-spacing: 1px;
 }
 
 .text--body-lr  {
     font-size: 1.5rem;
     font-weight: 800;
-    letter-spacing: 1px;
 }
 
 .text--body {
     font-size: 1.125rem;
     font-weight: 400;
-    letter-spacing: 1px;
     line-height: 28px;
 }
 
